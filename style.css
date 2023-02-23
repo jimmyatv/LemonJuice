@@ -8,10 +8,10 @@
     --accents: #C2C674;
     --textColor: #333333;
     --btnColor: #4F4F4F;
-    --light: #FAF9F5;
     --white: #ffff;
     --dark: #000;
     --background: #FAF9F5;
+    --background2: #E5E5E5;
 
 
     --transitions: .3s linear;
@@ -72,6 +72,10 @@ a {
 .d-flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
 }
 
 .justify-between {
@@ -171,7 +175,7 @@ header div {
 
 /* Ceo */
 .ceo {
-    background-color: var(--light);
+    background-color: var(--background);
     padding: 60px;
 }
 
@@ -182,13 +186,94 @@ header div {
     text-align: center;
 }
 
-.ceo h2 {
-    width: 70%;
+.ceo h3 {
+    width: 60%;
 }
 
 .ceo p {
     margin-top: 20px;
     text-transform: uppercase;
 }
+
+/* About us */
+.aboutUs {
+    background-color: var(--background2);
+    padding-bottom: 60px;
+}
+
+.aboutUs article:first-child {
+    margin: auto;
+    text-align: center;
+    width: 44%;
+    padding: 60px 0;
+}
+
+
+
+.plan div {
+    flex: 0 0 32%;
+    background-color: var(--background);
+    text-align: center;
+    width: 370px;
+    height: 300px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.plan div:nth-child(2) {
+    background-color: var(--tertiary);
+}
+
+.plan p {
+    width: 80%;
+    margin: auto;
+}
+
+.plan h5 {
+    margin: 20px 0 25px 0;
+}
+
+.plan img {
+    padding-top: 50px;
+}
+
+/* Our Mission */
+.ourMission {
+    display: flex;
+    background-color: var(--background);
+}
+
+.ourMission p {
+    width: 60%;
+    margin-left: 200px;
+    padding: 20px 0;
+}
+
+.ourMission h2 {
+    margin-left: 200px;
+}
+
+.ourMission div {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.ourMission a {
+    padding: 16px 80px;
+    background-color: var(--tertiary);
+    text-transform: uppercase;
+    color: var(--textColor);
+    border-radius: 10px;
+    margin-left: 200px;
+}
+
+.ourMission a:hover {
+    border-radius: 35px 0;
+}
+
+
 
 
