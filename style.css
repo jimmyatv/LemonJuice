@@ -208,7 +208,10 @@ header div {
     padding: 60px 0;
 }
 
-
+.aboutUs h2 {
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
 
 .plan div {
     flex: 0 0 32%;
@@ -274,6 +277,87 @@ header div {
     border-radius: 35px 0;
 }
 
+/* customer */
+.customer {
+    background-image: url(./img/customer.jpg);
+    height: 45vh;
+}
+
+
+.customer i {
+    color: var(--primary);
+    font-size: 200px;
+    opacity: 0.2;
+}
+
+.hit {
+    text-align: end;
+    color: var(--primary);
+    font-size: 94px;
+    font-weight: bold;
+    margin-top: -100px;
+    font-family: var(--headingsFonts);
+}
+
+.customer article {
+    align-items: center;
+}
+
+.customer p:last-child {
+    color: var(--white);
+    margin-top: 90px;
+    text-align: center;
+}
+
+/* Testimonials*/
+.testimonials {
+    background-image: url(./img/testimonials.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials img {
+    margin: 0 80px 30px 0;
+}
+
+.testimonials article {
+    justify-content: stretch;
+}
+
+.testimonials article:first-child {
+    flex: 0 0 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials article:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex: 60%;
+    padding-top: 70px;
+}
+
+.testimonials article:last-child div {
+    text-align: center;
+}
+
+.testimonials article:last-child div p:last-child {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.testimonials p, .testimonials h4 {
+    width: 80%;
+}
+
+/* Accordions */
+.accordion {
+    width: 100%;
+}
 
 
 
