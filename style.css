@@ -314,7 +314,7 @@ header div {
     background-image: url(./img/testimonials.jpg);
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 55vh;
     display: flex;
     justify-content: space-between;
 }
@@ -356,8 +356,66 @@ header div {
 
 /* Accordions */
 .accordion {
-    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: var(--background2);
+}
+ .questions {
+    padding: 50px 0;
+ }
+
+ .questions h2 {
+    margin-bottom: 40px;
+ }
+
+ .accordion-body {
+    text-align: start;
+ }
+  
+/* Subscribe */
+.subscribe {
+    text-align: center;
+    padding: 50px 0;
 }
 
+.subscribe div p {
+    padding-bottom: 20px;
+}
+
+.subscribe form {
+    position: relative;
+}
+
+.subscribe i {
+    font-size: 32px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 200px;
+    color: var(--primary);
+}
+.subscribe input {
+    padding: 10px 32px;
+    text-align: start;
+    margin-right: 50px;
+}
+
+.subscribe div:last-child p {
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.btn-black {
+    padding: 16px 80px;
+    background-color: var(--tertiary);
+    text-transform: uppercase;
+    color: var(--textColor);
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-black:hover {
+    border-radius: 35px 0;
+    transition: var(--transitions);
+}
 
 
