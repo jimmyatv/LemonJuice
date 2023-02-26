@@ -150,7 +150,7 @@ nav span a {
 nav span a:hover {
     transition: var(--transitions);
     border: 2px solid var(--primary);
-    border-radius: 15px 0 15px 0;
+    border-radius: 35px 0 35px 0;
     color: var(--primary);
 }
 
@@ -465,7 +465,7 @@ footer div div:first-child i:hover {
     background-color: var(--dark);
     color: var(--white);
     transition: .4s linear;
-    border-radius: 15px 0 15px 0;
+    border-radius: 25px 0 25px 0;
 }
 
 footer div div:nth-child(2) li {
