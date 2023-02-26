@@ -91,6 +91,10 @@ a {
     justify-content: end;
 }
 
+.stretch {
+    align-items: stretch;
+}
+
 .py {
     padding-top: 100px 0;
 }
@@ -138,9 +142,16 @@ nav a:hover {
     color: var(--primary);
 }
 
-nav span {
+nav span a {
     border: 1px solid var(--textColor);
     padding: 10px 50px;
+}
+
+nav span a:hover {
+    transition: var(--transitions);
+    border: 2px solid var(--primary);
+    border-radius: 15px 0 15px 0;
+    color: var(--primary);
 }
 
 /* ? Header */
@@ -418,4 +429,67 @@ header div {
     transition: var(--transitions);
 }
 
+/* footer */
+.cta {
+    flex: 0 0 32%;
+    padding: 25px 35px;
+}
 
+.cta img {
+    margin-bottom: 24px;
+}
+footer {
+    background-color: var(--background2);
+    height: 50vh;
+}
+
+footer div:nth-child(2) {
+    text-align: center;
+}
+
+footer div div:first-child p {
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+footer div div:first-child i {
+    font-size: 28px;
+    color: var(--textColor);
+    padding: 10px 14px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+footer div div:first-child i:hover {
+    background-color: var(--dark);
+    color: var(--white);
+    transition: .4s linear;
+    border-radius: 15px 0 15px 0;
+}
+
+footer div div:nth-child(2) li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+footer div div:nth-child(2) a {
+    color: var(--textColor);
+}
+
+footer div div:nth-child(2) a:hover {
+    color: var(--accents);
+    transition: var(--transitions);
+}
+
+footer div div:nth-child(2) h5 {
+    margin-top: 30px;
+}
+
+footer div div:nth-child(2) ul {
+    margin-top: 20px;
+}
+
+footer div div:last-child h5 {
+    margin: 23px 0;
+}
