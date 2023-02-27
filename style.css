@@ -95,26 +95,34 @@ a {
     align-items: stretch;
 }
 
+.alignCenter {
+    align-items: center;
+}
+
 .py {
     padding-top: 100px 0;
 }
 
 /* Top Bar */
-.topBar {
-    padding-top: 25px;
-    margin: -15px;
+.topBar div:first-child {
+    margin-top: 15px;
+}
+
+.fa-eye {
+    margin-left: -45px;
 }
 
 
-.topBar i {
+.map i {
     margin: 0 10px 0 30px;
     color: var(--tertiary);
     font-size: 24px;
 }
 
-.topBar img {
-    padding-bottom: 15px;
+.map {
+    margin-top: 15px;
 }
+
 
 .topBar a img:hover {
     opacity: 0.7;
@@ -123,8 +131,14 @@ a {
 
 /* Nav Bar */
 
+
 .activeDiv {
     display: none;
+}
+
+
+nav {
+    max-height: 66px;
 }
 
 nav ul {
@@ -132,15 +146,13 @@ nav ul {
 }
 nav li{
     text-transform: uppercase;
+    
 }
 
 nav a {
-    color: var(--textColor);
+    color: var(--textColor); 
 }
 
-nav i {
-    margin-left: -100px;
-}
 
 nav a:hover {
     color: var(--primary);
@@ -500,137 +512,7 @@ footer div div:last-child h5 {
 
 /* Responsive for mobile phone - Samsung S20 ultra */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 412px) {
 
-    .topBar {
-        padding-bottom: 10px;
-    }
-
-    .activeDiv {
-        display: block;
-        position: fixed;
-        margin: 0 15px 90px 0;
-        right: 0;
-        z-index: 99;
-    }
-    
-    .topBar .map {
-        opacity: 0;
-        
-    }
-
-    .topBar {
-        position: fixed;
-        background-color: var(--background);
-        height: 90px;
-    }
-
-    .topBar div:first-child {
-        position: relative;
-    }
-    
-    hr {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        cursor: pointer;
-
-        user-select: none;
-
-        border: none;
-        outline: none;
-        background: none;
-        appearance: none;
-    }
-
-    .burger span {
-        display: block;
-        width: 34px;
-        height: 4px;
-        margin-bottom: 5px;
-
-        background-color: var(--dark);
-        border-radius: 8px;
-
-        transform-origin: 0 0;
-
-        transition: var(--transitions);
-
-       }
-
-       .burger:hover span:nth-child(2) {
-            transform: translateX(-15px);
-            background-color: var(--tertiary);
-       }
-
-       .burger.is-active span:nth-child(2) {
-        transform: translateX(-15px);
-        opacity: 0;
-       }
-
-       .burger.is-active span:nth-child(1) {
-        transform: translate(0px, -2px ) rotate(45deg);
-       }
-
-       .burger.is-active span:nth-child(3) {
-        transform: translate(-3px, 3px ) rotate(-45deg);
-       }
-
-       .burger.is-active:hover span {
-        background-color: var(--btnColor);
-       }
-
-       .navBar a {
-        padding: 12px 32px;
-        color: var(--dark);
-        border-radius: 30px;
-        display: block;
-        max-width: 200px;
-        }
-    
-        .navBar a:hover {
-            color: var(--tertiary);
-            transition: var(--transition);
-        }
-
-
-       
-       .mobile-nav {
-        position: fixed;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        min-height: 100vh;
-        display: block;
-        z-index: 98;
-        background-color: var(--background);
-        padding-top: 150px;
-        transition: var(--transitions);
-        flex-direction: column;
-        }
-
-        .mobile-nav:hover {
-            color: var(--accents);
-            transition: var(--transitions);
-        }
-
-        .mobile-nav.is-active {
-            left: 0;
-        }
-
-        .topBar {
-            z-index: 99;
-        }
-
-
-        
-        
-       
-
-
-    
-    
 }
     
