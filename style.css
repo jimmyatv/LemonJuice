@@ -108,8 +108,18 @@ a {
 }
 
 /* Top Bar */
+
+.topBar {
+    position: relative;
+}
+
 .topBar div:first-child {
     margin-top: 15px;
+}
+
+.topBar a img:hover {
+    opacity: 0.7;
+    transition: var(--transitions);
 }
 
 .fa-eye {
@@ -128,10 +138,6 @@ a {
 }
 
 
-.topBar a img:hover {
-    opacity: 0.7;
-    transition: var(--transitions);
-}
 
 /* Nav Bar */
 
@@ -280,9 +286,9 @@ header div {
     background-color: var(--background);
 }
 
-        .ourMission img {
-            max-width: 100%;
-        }
+.ourMission img {
+    max-width: 100%;
+ }
 
 .ourMission p {
     width: 60%;
@@ -318,7 +324,10 @@ header div {
 /* customer */
 .customer {
     background-image: url(./img/customer.jpg);
-    height: 45vh;
+}
+
+.customer article {
+    padding: 60px 0;
 }
 
 
@@ -354,6 +363,7 @@ header div {
     background-size: cover;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 45px;
 }
 
 .testimonials img {
@@ -520,29 +530,17 @@ footer div div:last-child h5 {
     margin: 23px 0;
 }
 
-.topBar {
-    position: relative;
-}
-
 
 
 /* Responsive for mobile phone - Samsung S20 ultra */
 
 @media screen and (max-width: 412px) {
-    .navBar {
-        display: none;
-    }
-
-    hr {
+    .navBar, .map, hr {
         display: none;
     }
 
     .activeDiv {
         display: block;
-    }
-
-    .map {
-        display: none;
     }
 
 
