@@ -36,6 +36,10 @@ body {
     font-weight: 400;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--headingsFonts);
     color: var(--secondary);
@@ -69,7 +73,7 @@ a {
     margin: auto;
 }
 
-.d-flex {
+.d-flexx {
     display: flex;
     flex-wrap: wrap;
 }
@@ -240,14 +244,21 @@ header div {
     padding-top: 20px;
 }
 
+.plan {
+    margin-top: 60px;
+}
+
 .plan div {
     flex: 0 0 32%;
     background-color: var(--background);
     text-align: center;
     width: 370px;
     height: 300px;
-    margin-top: 60px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .plan div:nth-child(2) {
@@ -256,22 +267,22 @@ header div {
 
 .plan p {
     width: 80%;
-    margin: auto;
 }
 
 .plan h5 {
     margin: 20px 0 25px 0;
 }
 
-.plan img {
-    padding-top: 50px;
-}
 
 /* Our Mission */
 .ourMission {
     display: flex;
     background-color: var(--background);
 }
+
+        .ourMission img {
+            max-width: 100%;
+        }
 
 .ourMission p {
     width: 60%;
@@ -341,7 +352,6 @@ header div {
     background-image: url(./img/testimonials.jpg);
     background-position: center;
     background-size: cover;
-    height: 55vh;
     display: flex;
     justify-content: space-between;
 }
@@ -419,6 +429,7 @@ header div {
     margin-top: 11px;
     margin-left: 5px;
     color: var(--tertiary);
+    opacity: 0.6;
 }
 .subscribe input {
     padding: 10px 32px;
@@ -456,7 +467,6 @@ header div {
 }
 footer {
     background-color: var(--background2);
-    height: 50vh;
 }
 
 footer div:nth-child(2) {
@@ -510,9 +520,36 @@ footer div div:last-child h5 {
     margin: 23px 0;
 }
 
+.topBar {
+    position: relative;
+}
+
+
+
 /* Responsive for mobile phone - Samsung S20 ultra */
 
 @media screen and (max-width: 412px) {
+    .navBar {
+        display: none;
+    }
 
+    hr {
+        display: none;
+    }
+
+    .activeDiv {
+        display: block;
+    }
+
+    .map {
+        display: none;
+    }
+
+
+    .activeDiv {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
     
