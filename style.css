@@ -142,7 +142,7 @@ a {
 /* Nav Bar */
 
 
-.activeDiv {
+.burger {
     display: none;
 }
 
@@ -534,20 +534,5 @@ footer div div:last-child h5 {
 
 /* Responsive for mobile phone - Samsung S20 ultra */
 
-@media screen and (max-width: 412px) {
-    .navBar, .map, hr {
-        display: none;
-    }
-
-    .activeDiv {
-        display: block;
-    }
-
-
-    .activeDiv {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}
+/* ? IN PROGRESS ... */
     
