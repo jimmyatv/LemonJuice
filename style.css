@@ -40,7 +40,12 @@ img {
     max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--headingsFonts);
     color: var(--secondary);
 }
@@ -60,7 +65,7 @@ p {
     font-size: var(--fontSize);
     line-height: var(--lineHeight);
     color: var(--textColor);
-    
+
 }
 
 a {
@@ -68,73 +73,19 @@ a {
     transition: var(--transitions);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-}
 
-.d-flexx {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.justify-between {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-end {
-    justify-content: end;
-}
-
-.stretch {
-    align-items: stretch;
-}
-
-.alignCenter {
-    align-items: center;
-}
-
-.py {
-    padding-top: 100px 0;
+.py-5 {
+    padding: 100px 0 !important;
 }
 
 /* Top Bar */
-
 .topBar {
-    position: relative;
+    border-bottom: 1px solid var(--primary);
 }
 
-.topBar div:first-child {
-    margin-top: 15px;
-}
-
-.topBar a img:hover {
-    opacity: 0.7;
-    transition: var(--transitions);
-}
-
-.fa-eye {
-    margin-left: -45px;
-}
-
-
-.map i {
-    margin: 0 10px 0 30px;
-    color: var(--tertiary);
-    font-size: 24px;
-}
-
-.map {
-    margin-top: 15px;
+.topBar i {
+    font-size: 22px;
+    color: var(--primary);
 }
 
 
@@ -142,49 +93,12 @@ a {
 /* Nav Bar */
 
 
-.burger {
-    display: none;
-}
-
-
-nav {
-    max-height: 66px;
-}
-
-nav ul {
-    list-style: none;
-}
-nav li{
-    text-transform: uppercase;
-    
-}
-
-nav a {
-    color: var(--textColor); 
-}
-
-
-nav a:hover {
-    color: var(--primary);
-}
-
-nav span a {
-    border: 1px solid var(--textColor);
-    padding: 10px 50px;
-}
-
-nav span a:hover {
-    transition: var(--transitions);
-    border: 2px solid var(--primary);
-    border-radius: 35px 0 35px 0;
-    color: var(--primary);
-}
-
 /* ? Header */
 header {
     background-image: url(./img/header.jpg);
-    height: 65vh;
+    height: 60vh;
     display: flex;
+    align-items: center;
 }
 
 header a {
@@ -300,9 +214,7 @@ header div {
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
-    align-items: start
-    
-    ;
+    align-items: start;
     justify-content: center;
 }
 
@@ -401,44 +313,53 @@ header div {
     padding-bottom: 50px;
     background-color: var(--background2);
 }
- .questions {
+
+.questions {
     padding: 50px 0;
- }
+}
 
- .questions h2 {
+.questions h2 {
     margin-bottom: 40px;
- }
+}
 
- .accordion-body {
+.accordion-body {
     text-align: start;
- }
-  
+}
+
 /* Subscribe */
 .subscribe {
     text-align: center;
-    padding: 50px 0;
-}
-
-.subscribe div p {
-    padding-bottom: 20px;
-}
-
-.subscribe form {
-    position: relative;
 }
 
 .subscribe i {
-    font-size: 25px;
-    position: absolute;
-    margin-top: 11px;
-    margin-left: 5px;
-    color: var(--tertiary);
-    opacity: 0.6;
+    font-size: 28px;
+    position: relative;
+    margin-left: 10px;
+    top: 5px;
+    color: var(--primary);
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
 }
+
 .subscribe input {
-    padding: 10px 32px;
-    text-align: start;
-    margin-right: 50px;
+    background-color: rgb(221, 218, 218);
+    color: #2e2a2a;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: var(--transitions);
+    border: 1px solid transparent;
+}
+
+.subscribe input:hover {
+    cursor: pointer;
+    background-color: rgb(241, 238, 238);
+}
+
+.subscribe input:focus {
+    cursor: text;
+    border: 2px solid var(--primary);
+    background-color: white;
 }
 
 .subscribe div:last-child p {
@@ -446,25 +367,26 @@ header div {
     text-transform: uppercase;
 }
 
-.btn-black {
-    padding: 16px 80px;
-    background-color: var(--tertiary);
-    text-transform: uppercase;
-    color: var(--textColor);
-    border-radius: 10px;
-    border: none;
+.subscribe form input:last-child {
+    padding: 10px 40px;
+    margin-left: 10px;
+    background-color: var(--primary);
+    color: #2e2a2a;
+    transition: var(--transitions);
+
 }
 
-.btn-black:hover {
+.subscribe form input:last-child:hover {
     border-radius: 35px 0;
-    transition: var(--transitions);
+
 }
+
 
 /* footer */
 .cta {
     flex: 0 0 32%;
     padding: 30px;
-    
+
 }
 
 footer {
@@ -472,11 +394,12 @@ footer {
     padding: 20px;
 }
 
-footer > p {
+footer>p {
     text-align: center;
 }
 
-footer h5, footer img {
+footer h5,
+footer img {
     margin-bottom: 35px;
 }
 
@@ -521,4 +444,3 @@ footer div div:nth-child(2) a:hover {
 /* Responsive for mobile phone - Samsung S20 ultra */
 
 /* ? IN PROGRESS ... */
-    

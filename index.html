@@ -15,51 +15,64 @@
 <body>
 
     <!-- Top Bar -->
-    <section class="topBar d-flexx column">
-        <div class="container d-flexx justify-between">
-            <a href=""><img src="./img/logo.png" alt=""></a>
-            <button class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <div class="d-flexx justify-between map">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>7041 Grand national drive, suite 230, Orlando, FL</p>
-
-                <i class="fa-solid fa-phone-volume"></i>
-                <p>32819(321) 754-1033</p>
-
-                <i class="fa-solid fa-envelope"></i>
-                <p>info@lemonjulce.biz</p>
+    <section class="topBar py-2 d-lg-block d-md-none d-sm-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href=""><img src="./img/logo.png" alt=""></a>
+                </div>
+                <div class="col-md-8 d-flex align-items-center justify-content-end">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="d-inline-block ms-1">7041 Grand national drive, suite 230, Orlando, FL</p>
+                    <i class="fa-solid fa-phone-volume ms-3"></i>
+                    <p class="d-inline-block ms-1">32819(321) 754-1033</p>
+                    <i class="fa-solid fa-envelope ms-3"></i>
+                    <p class="d-inline-block ms-1">info@lemonjulce.biz</p>
+                </div>
             </div>
         </div>
-        <hr>
-        <!-- Nav Bar -->
-        <nav>
-            <div class="container navBar">
-                <ul class="d-flexx justify-between mobile-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Covid-19</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Properties</a></li>
-                    <span>
-                        <li><a href="#">Owners</a></li>
-                    </span>
-                    <i class="fa-solid fa-eye"></i>
-                </ul>
-            </div>
-        </nav>
     </section>
 
-
-
+    <!-- Nav Bar -->
+    <section class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand d-lg-none d-md-block d-sm-block" href="#"><img src="./img/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Covid-19</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Properties</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Owners</a>
+                  </li>
+                  <i class="fa-solid fa-eye d-flex align-items-center"></i>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
 
     <!-- Header -->
-    <header>
+    <header class="py-5 d-flex text-align-center">
         <div class="container">
             <h1>Reimagining Resorts A Fresh Perspective </h1>
             <a href="#">Learn More</a>
@@ -270,10 +283,10 @@
     </section>
 
     <!-- Subscribe -->
-    <section class="subscribe container">
+    <section class="subscribe container py-5">
         <div>
             <h2>Subscribe</h2>
-            <p>Sign up with your email address to receive news and updates</p>
+            <p class="pb-4">Sign up with your email address to receive news and updates</p>
         </div>
 
         <div>
@@ -284,7 +297,7 @@
                 <input type="text" required="true" placeholder="Last Name">
                 <i class="fa-solid fa-envelope"></i>
                 <input type="email" required="true" placeholder="E-mail">
-                <input class="send btn-black" type="submit" value="Send">
+                <input class="send" type="submit" value="Send">
             </form>
 
             <p>Your privacy is important to us.</p>
