@@ -91,9 +91,30 @@ a {
 
 
 /* Nav Bar */
+.navbar-nav {
+    text-transform: uppercase;
+}
+
+.navbar-nav li a {
+    transition: var(--transitions);
+}
+
+.navbar-nav li a:hover {
+    color: var(--primary);
+}
+
+.navbar-nav li:nth-child(7) a {
+    border: 1px solid var(--dark);
+    margin-right: 10px;
+    
+}
+
+.navbar-nav li:nth-child(7) a:hover {
+    border-radius: 25px 0;
+}
 
 
-/* ? Header */
+/* Header */
 header {
     background-image: url(./img/header.jpg);
     height: 60vh;
@@ -125,73 +146,36 @@ header div {
 }
 
 /* Ceo */
-.ceo {
-    background-color: var(--background);
-    padding: 60px;
-}
-
-.ceo div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .ceo h3 {
-    width: 60%;
-}
-
-.ceo p {
-    margin-top: 20px;
-    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
 }
 
 /* About us */
 .aboutUs {
     background-color: var(--background2);
-    padding-bottom: 60px;
-}
-
-.aboutUs article:first-child {
-    margin: auto;
-    text-align: center;
-    width: 44%;
-    padding: 60px 0;
-}
-
-.aboutUs h2 {
-    margin-bottom: 30px;
-    padding-top: 20px;
 }
 
 .plan {
-    margin-top: 60px;
+    display: flex;
+    gap: 2%;
+}
+
+.plan img {
+    width: 60px;
 }
 
 .plan div {
-    flex: 0 0 32%;
     background-color: var(--background);
-    text-align: center;
-    width: 370px;
+    width: 30%;
     height: 300px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .plan div:nth-child(2) {
     background-color: var(--tertiary);
 }
 
-.plan p {
-    width: 80%;
-}
-
-.plan h5 {
-    margin: 20px 0 25px 0;
-}
 
 
 /* Our Mission */
