@@ -159,7 +159,7 @@ header div {
 
 .plan {
     display: flex;
-    gap: 2%;
+    gap: 30px;
 }
 
 .plan img {
@@ -168,7 +168,7 @@ header div {
 
 .plan div {
     background-color: var(--background);
-    width: 30%;
+    width: calc(32.4% - 10px);
     height: 300px;
 }
 
