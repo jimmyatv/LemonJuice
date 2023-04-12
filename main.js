@@ -1,7 +1,20 @@
-// const burger = document.querySelector('.burger');
-// const mobileNav = document.querySelector('.mobile-nav');
+// $(document).ready(function() {
+//     $('h1').hide(2000);  
+// }) jQuery Check
 
-// burger.addEventListener('click', () => {
-//     burger.classList.toggle('is-active');
-//     mobileNav.classList.toggle('is-active');
-// });
+$(document).ready(function(){
+    //? Fixed NavBar nad toTop button
+    $(window).on('scroll', function() {
+        let scroll = $(window).scrollTop();
+        if(scroll >= 100) {
+            $('.sticky').addClass('stickyAdd');
+            $('.toTop').addClass('toTopAdd');
+        } else {
+            $('.sticky').removeClass('stickyAdd');
+            $('.toTop').removeClass('toTopAdd');
+        }
+    });
+
+
+
+})

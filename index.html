@@ -15,68 +15,51 @@
 <body>
 
     <!-- Top Bar -->
-    <section class="topBar py-2 d-lg-block d-md-none d-sm-none">
+    <nav class="navbar navbar-expand-lg sticky fixed-top">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href=""><img src="./img/logo.png" alt=""></a>
-                </div>
-                <div class="col-md-8 d-flex align-items-center justify-content-end">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="d-inline-block ms-1">7041 Grand national drive, suite 230, Orlando, FL</p>
-                    <i class="fa-solid fa-phone-volume ms-3"></i>
-                    <p class="d-inline-block ms-1">32819(321) 754-1033</p>
-                    <i class="fa-solid fa-envelope ms-3"></i>
-                    <p class="d-inline-block ms-1">info@lemonjulce.biz</p>
-                </div>
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Covid-19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Owners</a>
+                    </li>
+                    <i class="fa-solid fa-eye d-flex align-items-center"></i>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Nav Bar -->
-    <section class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand d-lg-none d-md-block d-sm-block" href="#"><img src="./img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav m-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Covid-19</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Owners</a>
-                        </li>
-                        <i class="fa-solid fa-eye d-flex align-items-center"></i>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
+    </nav>
 
     <!-- Header -->
     <header class="py-5 d-flex text-align-center">
         <div class="container">
-            <h1>Reimagining Resorts A Fresh Perspective </h1>
-            <a href="#">Learn More</a>
+            <div class="row">
+                <div class="col">
+                    <h1>Reimagining Resorts A Fresh Perspective </h1>
+                    <a class="myBtn" href="#">Learn More</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -92,12 +75,15 @@
         </div>
     </section>
 
+    <!-- Back to top -->
+    <a class="toTop " href="#"><i class="fa-solid fa-angles-up"></i></a>
+
     <!-- About us -->
     <section class="aboutUs py-5">
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2 class="mb-4">About us</h2>
+                    <h2 class="mb-4 display-4">About us</h2>
                     <p>The very start of Lemonjuice Capital in timeshares in 2013 was from realization that the
                         aggregate value
                         of timeshares is a fraction of the real estate value. Our focus was on distressed and struggling
@@ -114,21 +100,24 @@
                 <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
                     <img src="./img/support.png" alt="">
                     <h5 class="my-3">Full Service</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur ex, id dignissim
+                    <p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur ex, id
+                        dignissim
                         ipsum.
                         Aliquam erat volutpat. </p>
                 </div>
                 <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
                     <img src="./img/partner.png" alt="">
                     <h5 class="my-3">Strategic planning</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur ex, id dignissim
+                    <p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur ex, id
+                        dignissim
                         ipsum.
                         Aliquam erat volutpat. </p>
                 </div>
                 <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
                     <img src="./img/leader.png" alt="">
                     <h5 class="my-3">Competence</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur ex, id dignissim
+                    <p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel efficitur ex, id
+                        dignissim
                         ipsum.
                         Aliquam erat volutpat. </p>
                 </div>
@@ -138,20 +127,28 @@
     </section>
 
     <!-- Our Mission -->
-    <section class="ourMission">
-        <div>
-            <h2>Our Mission</h2>
-            <p>Your resort has unique circumstances and we’ll approach it with a fresh perspective. Our experienced team
-                of professionals will provide the highest measure of owner services, financial management, rental
-                revenue management, and technology optimization. <br> Lets us focus on the details while you focus on
-                your memories! Additionally, Lemonjuice Solutions is uniquely qualified to help you through the complex
-                situations of sunset clauses, aging ownership, and high owner delinquencies. Professional and objective
-                expertise to assess the situation will avoid costly wheel-spinning.</p>
-            <a href="#">Learn more</a>
-        </div>
-
-        <div>
-            <img src="./img/missionPicture.jpg" alt="">
+    <section class="ourMission py-5 ">
+        <div class="container-fluid">
+            <div class="row  align-items-center">
+                <div class="col-md-6 p-5">
+                    <h2 class="display-4">Our Mission</h2>
+                    <p class="w-75 py-4">Your resort has unique circumstances and we’ll approach it with a fresh perspective. Our
+                        experienced team
+                        of professionals will provide the highest measure of owner services, financial management,
+                        rental
+                        revenue management, and technology optimization. <br> Lets us focus on the details while you
+                        focus on
+                        your memories! Additionally, Lemonjuice Solutions is uniquely qualified to help you through the
+                        complex
+                        situations of sunset clauses, aging ownership, and high owner delinquencies. Professional and
+                        objective
+                        expertise to assess the situation will avoid costly wheel-spinning.</p>
+                    <a class="myBtn" href="#">Learn more</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="fluid" src="./img/missionPicture.jpg" alt="">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -362,6 +359,9 @@
     </footer>
 
 
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
