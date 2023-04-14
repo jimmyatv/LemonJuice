@@ -205,6 +205,7 @@ header div {
 .toTop {
     cursor: pointer;
     position: fixed;
+    z-index: 3;
     bottom: 16px;
     right: 32px;
     width: 50px;
@@ -234,36 +235,32 @@ header div {
 /* Customer */
 .customer {
     background-image: url(./img/customer.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.customer article {
-    padding: 60px 0;
+.middle {
+    position: relative;
+    left: 50%;
+    bottom: -25%;
 }
 
 
-.customer i {
+.middle p:first-child {
     color: var(--primary);
-    font-size: 200px;
-    opacity: 0.2;
-}
-
-.hit {
-    text-align: end;
-    color: var(--primary);
-    font-size: 94px;
+    font-size: 100px;
+    line-height: 100px;
     font-weight: bold;
-    margin-top: -100px;
     font-family: var(--headingsFonts);
 }
 
-.customer article {
-    align-items: center;
+.middle p:last-child {
+    text-transform: uppercase;
 }
+
 
 .customer p:last-child {
     color: var(--white);
-    margin-top: 90px;
-    text-align: center;
 }
 
 /* Testimonials*/
